@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lamborghini Loading</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #1f1f1f;
+            color: #fff;
+        }
+
+        .loading-container {
+            text-align: center;
+        }
+
+        .loading-logo {
+            width: 100px;
+            height: auto;
+        }
+
+        .loading-text {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+
+        /* Loading animation */
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            50% { transform: rotate(360deg); }
+        }
+
+        .loading-logo {
+            animation: spin 2s linear infinite;
+        }
+    </style>
+</head>
+<script>
+  
+    setTimeout(function() {
+        window.location.href = 'nextpage.html';
+    }, 3000); // 
+</script>
+<body>
+    <div class="loading-container">
+        <img class="loading-logo" src="Lamborghini_Logo.svg.png" alt="Lamborghini Logo">
+        <p class="loading-text">Loading...</p>
+    </div>
+</body>
+</html>
